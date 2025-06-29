@@ -4,4 +4,4 @@ def test_valid_login(driver):
     login_page = LoginPage(driver)
     login_page.load()
     login_page.login("tomsmith", "SuperSecretPassword!")
-    assert "/secure" in driver.current_url
+    assert "/secure" in login_page.driver.current_url
