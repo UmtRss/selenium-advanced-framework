@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
 
 class LoginPage:
-    URL = "https://example.com/login"
+    URL = "https://the-internet.herokuapp.com/login"
     USERNAME_INPUT = (By.ID, "username")
     PASSWORD_INPUT = (By.ID, "password")
-    LOGIN_BUTTON = (By.ID, "loginBtn")
+    LOGIN_BUTTON = (By.CSS_SELECTOR, "button[type='submit']")
 
     def __init__(self, driver):
         self.driver = driver
